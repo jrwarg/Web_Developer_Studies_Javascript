@@ -1,0 +1,58 @@
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 50px;
+    background-color: red;
+}
+.slider{
+    width: 100%; /*para ficar com a totalidade da largura na tela*/
+    /* width: 500px; */
+    height: 300px;
+    overflow: hidden; /*evita barra de rolagem -> tudo que passar do tamanho da tela será cortado*/
+}
+.slider--width{
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+
+.slider--item{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+    color: rgb(7, 17, 160) ;
+
+}
+
+.slider--controls{
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider--control{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}

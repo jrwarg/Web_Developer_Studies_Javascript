@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Upload de Arquivos e Thumbnail na tela</title>
+</head>
+<body>
+    <h1>Upload de Arquivos e thumbnail na tela</h1>
+    <h3>Através de requisições internas</h3>
+
+    <input type="file" id="arquivo">
+    <button onclick="enviarArquivo()">Enviar</button><br><br>
+    <input type="file" accept="image/*" id="imagem">
+    <button onclick="mostrar()">Mostrar</button><br><br>
+
+    <div id="area"></div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
